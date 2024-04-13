@@ -1,0 +1,237 @@
+.discution-forum{
+    display: flex;
+    flex-direction: column;
+}
+
+.person-discusion{
+    width: 87.4%;
+    margin-top: 47px;
+    margin-left: 163px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #0061F5; */
+    padding-bottom: 10px;
+    /* overflow: hidden; */
+}
+.discusion-container{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.owner-information{
+    height: 120px;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: row;
+    gap: 35%;
+}
+
+.owner-profile-set{
+    height: 100px;
+    /* background-color: cadetblue; */
+    margin-top: 10px;
+    width: 55%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.discusion-access{
+    height: 60px;
+    width: 100px;
+    /* background-color: blue; */
+    margin-top: 10px;
+}
+
+.discusion-owner{
+    height: 80px;
+    width: 80px;
+    /* background-color: aquamarine; */
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.discusion-owner img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.discusion-owner-details{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    width: 80%;
+    /* background-color: aquamarine; */
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.discusion-owner-names{
+    font-size: 22px;
+    color: #0061F5;
+}
+
+.discusion-status-time{
+    display: flex;
+    flex-direction: row;
+    /* background-color: blueviolet; */
+    height: 30px;
+    width: 50%;
+    margin-top: 5px;
+    gap: 15px;
+}
+
+.discucion-status{
+    font-size: 16px;
+    color: #000;
+}
+
+.discucion-dot{
+    background-color: #000;
+    border-radius: 100px;
+    width: 5px;
+    height: 5px;
+    margin-top: 10px;
+}
+
+.posted-time{
+    font-size: 16px;
+}
+
+/* ----------DISCUSION CONTENT FORM------ */
+
+.discusion-forum-content{
+    height: 200px;
+    /* background-color: #0061F5; */
+    height: auto;
+    padding: 15px;
+}
+
+.discusion-forum-title{
+    color: #000;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.discusion-forum-contents{
+    padding-right: 20px;
+    /* background-color: aqua; */
+    height: auto;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    line-height: 27px;
+    font-size: 17px;
+}
+
+.discusion-replies{
+    height: 40px;
+    /* background-color: aliceblue; */
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.discusion-likes{
+    height: 40px;
+    width: 100px;
+    /* background-color: brown; */
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.discusion-likes span{
+    font-size: 16px;
+    margin-top: 9px;
+    color: #5e5d5d;
+}
+
+.discusion-comments{
+    height: 40px;
+    width: 25%;
+    /* background-color: rgb(233, 164, 164); */
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.discusion-comments span{
+    font-size: 16px;
+    margin-top: 8px;
+    color: #5e5d5d;
+}
+
+.discusion-comments:hover{
+    text-decoration: underline;
+    color: #0061F5;
+}
+.discusion-comments span:hover{
+    text-decoration: underline;
+    color: #0061F5;
+}
+
+.comments-display{
+    margin-top: 10px;
+    height: auto;
+    background-color: #fdfafa63;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.comment-owner{
+    width: 60px;
+    height: 60px;
+    background-color: #0061F5;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.comment-owner img{
+    width: 100%;
+    height: 100%;
+}
+
+.comment-details{
+    margin-left: 10px;
+    width: calc(90%);
+    height: auto;
+    /* background-color: azure; */
+}
+
+.comment-owner-name{
+    font-size: 18px;
+    color: #0061F5;
+    font-weight: 600;
+}
+
+.comment-owner-role{
+    font-size: 17px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.comment-message{
+    margin-top: 5px;
+    line-height: 22px;
+    height: auto;
+    padding-bottom: 5px;
+}

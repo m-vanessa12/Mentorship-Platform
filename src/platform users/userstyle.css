@@ -1,0 +1,374 @@
+.platform-users{
+    display: flex;
+    flex-direction: column;
+}
+
+.users-container{
+    width: 87.4%;
+    height: auto;
+    margin-top: 62px;
+    margin-left: 163px;
+    background-color: #fff;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding-bottom: 20px;
+}
+
+.users-display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    width: 100%;
+    height: 300px;
+    height: auto;
+}
+
+.users-cards{
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+    /* background-color: burlywood; */
+    border-radius: 7px;
+}
+
+.main-info{
+    width: 100%;
+    /* background-color: red; */
+    height: auto;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    /* gap: 25px; */
+}
+
+.users-info{
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    /* background-color: #8f9296; */
+    width: 90%;
+    padding: 5px;
+}
+
+.user-profile{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.user-profile img{
+    width: 100%;
+    height: 100%;
+}
+
+.user-names{
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.user-category{
+    color: #0061F5;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.users-connect{
+    margin-top: 5px;
+    width: 180px;
+    height: 80px;
+    /* background-color: #e93aa6; */
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.users-connect button{
+    background-color: #0061F5;
+    border-radius: 7px;
+    border: none;
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.users-connect button:hover{
+    background-color: #F26C51;
+    color: #fff;
+}
+
+
+.users-bio{
+    /* background-color: #0061F5; */
+    line-height: 23px;
+    font-size: 16px;
+    font-weight: 350;
+    /* padding: 5px; */
+    margin-left: 10px;
+}
+
+
+
+
+
+
+/* --------------MENTEE PROFILE STYLING----------- */
+
+.profile-information{
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-profile{
+    width: 87.4%;
+    height: 500px;
+    margin-top: 62px;
+    margin-left: 163px;
+    /* background-color: #fff; */
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding-bottom: 20px;
+    
+}
+
+.personal-profile-part1{
+    padding: 10px;
+    /* background-color: #F26C51; */
+    height: auto;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mentee-personal-info{
+    width: 52.5%;
+    background-color: #fff;
+    border-radius: 7px;
+    height: auto;
+    padding-bottom: 5px;
+    display: flex;
+    margin-left: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px;
+}
+
+
+.mentee-profile-card{
+    /* background-color: rgb(255, 0, 255); */
+    height: auto;
+    width: 50%;
+    
+}
+
+.mentee-profile{
+    /* background-color: #f5b400; */
+    border-right: 1px solid #c0c0c0;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-left: 5px;
+    margin-top: 25%;
+}
+
+.mentee-profilepic{
+    /* background-color: #424141; */
+    width: 100px;
+    height: 150px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.mentee-profilepic img{
+    width: 100%;
+    height: 100%;
+}
+
+.mentee-name{
+    /* background-color: #0061F5; */
+    font-size: 20px;
+    font-weight: 600;
+    padding: 2px;
+    margin-top: 10px;
+    color: #000;
+}
+
+.mentee-status{
+    font-size: 18px;
+    font-weight: 400;
+    color: #0061F5;
+}
+
+.interets-notify{
+    margin-top: 25px;
+    width: 200px;
+    height: auto;
+    /* background-color: #e93aa6; */
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.interets-notify input{
+    background-color: #0061F5;
+    border-radius: 7px;
+    border: none;
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+
+
+
+
+.mentee-personal-details{
+
+    padding-bottom: 2px;
+    padding-top: 5px;
+    /* background-color: #8412db; */
+    margin-left: 15px;
+}
+
+.mentee-personal-details span{
+    font-size: 14px;
+    color: #424141;
+    /* background-color: #0061F5; */
+} 
+
+.mentee-personal-details h2{
+    /* background-color: blueviolet; */
+    font-size: 18px;
+    margin-top: 3%;
+    padding: 5px;
+}
+
+.mentee-education{
+    /* background-color: #095877; */
+    height: auto;
+    width: 47%;
+    /* margin-left: 20px; */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+.background-educations{
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px;
+    margin-left: 10px;
+    border-radius: 7px;
+    width: 100%;
+    height: auto;
+    /* padding-bottom: 5px; */
+}
+
+.school-title{
+    /* background-color: aqua; */
+    padding: 4px;
+    border-bottom: 1px solid #9a9a9a;
+    height: 30px;
+    font-size: 18px;
+}
+
+.school-names{
+    height: 35px;
+    /* background-color: #d41c1c; */
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.school-names span{
+    margin-left: 20px;
+    padding-top: 5px;
+}
+
+.Mentee-skills{
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px;
+    background-color: #fff;
+    margin-left: 10px;
+    border-radius: 7px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+    margin-top: 15px;
+
+}
+
+.Mentee-skills span{
+    margin-left: 20px;
+    padding-top: 5px;
+
+}
+
+
+
+
+/* ------------down part----------- */
+
+/* .bio-interets{
+    padding: 20px;
+    background-color: #F26C51;
+    width: 84.7%;
+    margin-left: 20px;
+    height: auto;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+
+} */
+
+
+/* DIPLAYING USERS ACCORDINGLY */
+
+.sort-users{
+    /* margin: 10px; */
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: #F26C51; */
+}
+
+.userss-listt{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
+}
+.userss{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 12px;
+    background-color: #0061F5;
+    color: #fff;
+    font-weight: 600;
+}
+.userss:hover{
+    background-color: #000;
+    color: #fff;
+    text-decoration: underline;
+}

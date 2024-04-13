@@ -1,0 +1,400 @@
+.booked-sessions{
+    display: flex;
+    flex-direction: column;
+}
+
+.displayed-session{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    /* height: 400px; */
+    height: auto;
+    margin-top: 62px;
+    margin-left: 163px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 20px;
+}
+
+.booking-owner{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: calc(100%-30px);
+    height: auto;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+}
+
+.booking-owner-profile{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    /* background-color: aqua; */
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.booking-owner-profile img{
+    width: 100%;
+    height: 100%;
+}
+
+.sessions-details{
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    border-left: 1px solid #ccc;
+    width: 90%;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.who-booked{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    /* background-color: #ccd1d8; */
+    gap: 20px;
+}
+
+.who-names{
+    font-size: 20px;
+    width: 20%;
+    /* background-color: #383838; */
+    font-weight: 600;
+    color: #0061F5;
+    margin-top: 10px;
+    margin-left: 5px;
+    /* background-color: aqua; */
+
+}
+
+.who-dot{
+    background-color: #000;
+    width: 5px;
+    height: 5px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+.who-time{
+    font-size: 16px;
+    font-weight: 600;
+    color: #383838;
+    margin-top: 10px;
+    width: 30%;
+    /* background-color: #66e44d; */
+
+}
+
+.session-status {
+    height: 22px;
+    width: 13%;
+    border-radius: 7px;
+    padding: 5px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin-left: 27%;
+    font-size: 17px;
+}
+
+.session-status-pending {
+    background-color: rgba(255, 255, 0, 0.692);
+}
+
+.session-status-accepted {
+    background-color: rgba(0, 128, 0, 0.685);
+}
+
+.session-status-rejected {
+    background-color: rgba(255, 0, 0, 0.603);
+}
+
+
+.suggested-time{
+    margin-top: 10px;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.suggested-time span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.session-about{
+    height: auto;
+    width: 95%;
+    padding-bottom: 5px;
+    font-size: 17px;   
+}
+
+.session-link{
+    margin-top: 15px;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.session-link a{
+    color: #0061F5;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.session-link a:hover{
+    text-decoration: underline;
+
+}
+
+
+.meetings{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    
+}
+
+.metting-decision{
+    margin-top: 10px;
+    width: 14%;
+    height: 40px;
+    border-radius: 7px;
+    background-color: cadetblue;
+    overflow: hidden;
+}
+
+.metting-decision button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 18px;
+    background-color: #0061F5;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.metting-decision button:hover{
+    background-color: #000;
+}
+
+
+
+
+/* Reject Invite Pop-up */
+
+.invite-rejection {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invite-rejection.show {
+    display: flex; /* Shown when the modal should be open */
+}
+
+
+.reject-access{
+    width: 40%;
+    height: auto;
+    border-radius: 7px;
+    background-color: #f8f6f6;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.reject-access button{
+    border-radius: 30px;
+    width: 30px;
+    height: 35px;
+    border: none;
+    background-color: #0061F5;
+    margin-left: 95%;
+    cursor: pointer;
+}
+
+.reject-access button:hover{
+    background-color: #050505;
+    color: #fff;
+}
+
+.reject-items{
+    margin-top: 10px;
+    padding: 20px;
+    height: auto;
+}
+
+.reject-title{
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.reject-subtitle{
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(39, 39, 39);
+}
+
+.rejection-description textarea{
+    padding: 20px;
+    height: 100px;
+    width: 450px;
+    background: #e0e0e0;
+    border: none;
+    color: #272626;
+    font-size: 17px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.rejection-submission{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rejection-submission input{
+    justify-content: center;
+    width: 40%;
+    height: 40px;
+    color: #fff;
+    background-color: #0061F5;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+
+/* Accept Invite styling */
+
+.invite-accept{
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invite-accept.show{
+    display: flex; 
+}
+
+.invite-access{
+    width: 40%;
+    height: auto;
+    border-radius: 7px;
+    background-color: #f8f6f6;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.invite-access button{
+    border-radius: 30px;
+    width: 30px;
+    height: 35px;
+    border: none;
+    background-color: #0061F5;
+    margin-left: 95%;
+    cursor: pointer;
+}
+.invite-access button:hover{
+    background-color: #050505;
+    color: #fff;
+}
+
+.accept-items{
+    margin-top: 10px;
+    padding: 20px;
+    height: auto;
+}
+
+.accept-title{
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.accept-subtitle{
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(39, 39, 39);
+}
+
+.accept-submission{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.accept-submission input{
+    justify-content: center;
+    width: 40%;
+    height: 40px;
+    color: #fff;
+    background-color: #0061F5;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+/* ........Meetings and interests....... */
+
+.sessions-interests{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.meetingss{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 12px;
+    background-color: #0061F5;
+    color: #fff;
+    font-weight: 600;
+}
+.meetingss:hover{
+    background-color: #000;
+    color: #fff;
+    text-decoration: underline;
+}

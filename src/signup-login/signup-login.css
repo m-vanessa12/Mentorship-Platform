@@ -1,0 +1,210 @@
+.container{
+
+        height: auto;
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        /* flex-direction: column; */
+        /* margin: auto; */
+        background: #fff;
+        /* padding-bottom: 30px; */
+}
+
+.content{
+    height: 100vh;
+    width: 45%;
+    background-color: #0061F5;
+    opacity: 0.8;
+    background-image: url('https://images.unsplash.com/photo-1553028826-f4804a6dba3b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    /* opacity: 0.5; */
+    padding: 20px;
+    
+
+    display: flex;
+    align-items: center;
+}
+
+.background-overlay{
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+.background-overlay h1{
+    font-size: 40px;
+}
+.background-overlay p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 200;
+}
+.background-overlay button{
+    width: 200px;
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #F26C51;
+    color: #fff;
+}
+
+/* ------------------FORM INPUTS FIELD PART------------ */
+
+ .form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* margin-top: 100px; */
+    /* background-color: blueviolet; */
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* margin-top: 30px; */
+    /* background-color: #ce0a7c; */
+}
+ 
+.texts h1{
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+    /* background-color: #F26C51; */
+    /* margin-top: 50px; */
+} 
+
+.subtitle{
+    color: #4e4e4e;
+    font-size: 22px;
+    font-weight: 400;
+    top: 0;
+
+}
+
+
+.google{
+
+    margin-top: 20px;    
+    display: flex;
+    align-items: center;
+    width: 440px;
+    height: 40px;
+    background-color: #c2daff;
+    border-radius: 7px;
+
+}
+
+.google img{
+    margin: 0px 20px;
+    width: 22px;
+    margin-left: 120px;
+}
+
+.google input{
+    height: 50px;
+    width: 200px;
+    border: none;
+    color: #272626;
+    font-size: 17px;
+    background-color: transparent;
+
+}
+
+.underline{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+}
+
+.line{
+    width: 180px;
+    height: 1px;
+    background-color: #7c7c7c;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.or{
+    margin-top: 40px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.inputs{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.inputfield{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 440px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 0.5px solid #808080;
+    border-radius: 7px;
+}
+
+.inputfield img{
+    margin: 0px 20px;
+    width: 22px;
+}
+
+.inputfield input{
+    height: 32px;
+    width: 375px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #272626;
+    font-size: 17px;
+}
+
+.submit-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: #ce0a7c; */
+    /* margin-left: 70px; */
+
+}
+
+.submit-container input{
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    width: 440px;
+    height: 40px;
+    color: #fff;
+    background-color: #0061F5;
+    border-radius: 7px;
+    font-size: 19px;
+    font-weight: 700px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;  
+}
+
+.account{
+    color: #0e0d0d;
+    font-size: 18px;
+    /* background-color: red; */
+}
+
+.account span{
+    color:#0061F5;
+    cursor: pointer;
+    margin-left: 5px;
+}
