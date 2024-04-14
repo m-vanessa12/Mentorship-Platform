@@ -88,14 +88,17 @@ const MenteeMeetings = () => {
                                 <div className="session-link">
                                   Meeting Link: <a href={meeting.meetingLink} target="_blank" rel="noopener noreferrer">{meeting.meetingLink}</a>
                                 </div>
-                                {/* Add any buttons or actions here */}
-                                {meeting.status === 'Rejected' && (
-                                <div className="session-about">
-                                    {console.log('Rejected reason should display')}
-                                    <span className="rejection-reason">Rejected Reason:</span> 
+                                {/* Add any buttons or actions here */}     
+                                {
+                                meeting.status === 'rejected' && (
+                                    <div className="session-about">
+                                    <span className="rejection-reason" style={{ color: 'red', fontWeight: 'bold' }}>
+                                        Rejected Reason: 
+                                    </span>
                                     {meeting.rejectionReason || 'No reason provided'}
-                                </div>
-                            )}
+                                    </div>
+                                )
+                                }
                             </div>
                             
                         </div>
