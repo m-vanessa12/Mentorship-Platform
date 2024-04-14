@@ -9,7 +9,9 @@ import registermockup_img from '../img/register-mockup.png'
 import { useNavigate } from 'react-router-dom';
 import { useCallback } from 'react';
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -39,11 +41,13 @@ const HomePage = () => {
         
         .then(
             (result) => {
-                console.log('SUCCESS!', result.text);
+                toast.success('Email sent successfully!'); 
+                form.current.reset(); 
                 
             },
             (error) => {
                 console.error('Email send failed:', error);
+                toast.error('Failed to send email. Please try again later.');
             }
             
         );
@@ -58,6 +62,7 @@ const HomePage = () => {
 
     return ( 
         <div className="homepage">
+            <ToastContainer />
             <div className="heading">
                 <div className="logo">Mentor.Me</div>
                 <div className="links">
