@@ -38,7 +38,7 @@ const AdminSpace = () => {
     
         try {
             const response = await axios.put(
-                `http://localhost:3000/api/admin-dashboard/${selectedUserId}`, // Ensure this matches your backend URL pattern
+                `https://capstone-project-2-aaem.onrender.com/api/admin-dashboard/${selectedUserId}`, // Ensure this matches your backend URL pattern
                 { role: selectedRole }, // Request body
                 {
                     headers: {
