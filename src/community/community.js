@@ -24,7 +24,7 @@ const getToken = () => {
    const Community = ({ currentUser }) => {
 
     const navigate = useNavigate();
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
    
     const [openModal, setOpenModal] = useState(false);
     const [discussions, setDiscussions] = useState([]);
@@ -45,7 +45,7 @@ const getToken = () => {
     const fetchDiscussions = async () => {
         setIsLoading(true);
         try {
-            const response = await axios.get('http://localhost:3000/api/forum');
+            const response = await axios.get('https://capstone-project-2-aaem.onrender.com/api/forum');
             const processedDiscussions = response.data.discussions.map(discussion => ({
                 // Process each discussion
                 ...discussion,
@@ -102,7 +102,7 @@ const getToken = () => {
     const addCommentToDiscussion = async (discussionId, newComment) => {
         try {
             // Fetch updated discussion data to include new comments
-            const response = await axios.get(`http://localhost:3000/api/forum/${discussionId}`);
+            const response = await axios.get(`https://capstone-project-2-aaem.onrender.com/forum/${discussionId}`);
             const updatedDiscussion = response.data.discussion;
     
             // Update the discussions state with the updated discussion data
@@ -148,7 +148,7 @@ const getToken = () => {
 
     const refreshDiscussions = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/api/forum');
+            const response = await axios.get('https://capstone-project-2-aaem.onrender.com/api/forum');
             const processedDiscussions = response.data.discussions.map(discussion => ({
                 ...discussion,
                 // process the discussion as needed
@@ -172,7 +172,7 @@ const getToken = () => {
     const headers = {
       'Authorization': `Bearer ${token}`
     };
-    const response = await axios.post(`http://localhost:3000${endpoint}`, { discussionId }, { headers });
+    const response = await axios.post(`https://capstone-project-2-aaem.onrender.com${endpoint}`, { discussionId }, { headers });
 
     if (response.data.success) {
       // Here's where you update the likes count in your state
@@ -200,7 +200,7 @@ const getToken = () => {
     const handleUnlike = async (discussionId, userId) => {
         try {
             const isLiked = userLikes[discussionId];
-            const response = await axios.delete('http://localhost:3000/api/likes', { data: { discussionId, userId } }); // Pass userId along with discussionId
+            const response = await axios.delete('https://capstone-project-2-aaem.onrender.com/api/likes', { data: { discussionId, userId } }); // Pass userId along with discussionId
     
             setUserLikes(prevUserLikes => ({
                 ...prevUserLikes,
@@ -263,7 +263,7 @@ const getToken = () => {
                             </div>
     
                             <div className="discusion-replies">
-                                <div className="discusion-likes" onClick={() => handleLike(discussion._id, currentUser ? currentUser.id : null)}>
+                                {/* <div className="discusion-likes" onClick={() => handleLike(discussion._id, currentUser ? currentUser.id : null)}>
                                     <FontAwesomeIcon 
                                         icon={faThumbsUp} 
                                         style={{ 
@@ -275,7 +275,7 @@ const getToken = () => {
                                     />
                                     <span>{discussion.likesCount}</span>
                                     <span> likes</span>
-                                </div>
+                                </div> */}
                                 <div className="discusion-comments">
                                     <FontAwesomeIcon icon={faComment} style={{ width: '22px', height: '25px', padding: '5px', color:'#5e5d5d'}}  /> 
                                     <span onClick={() => handleCommentClick(discussion._id)}> {discussion.commentCount} comments </span>
@@ -300,7 +300,14 @@ const getToken = () => {
                                 </div>
                                 <div className="comment-details">
                                     <div className="comment-owner-name">{comment.createdBy.name}</div>
-                                    <div className="comment-owner-role">{comment.createdBy.role}</div>                                    
+                                    <div className="comment-detail">
+                                        <div className="comment-owner-role">{comment.createdBy.role}</div> 
+                                        <div className="comment-dot"></div> 
+                                        <div className="comment-createdTime">
+                                        {formatDistanceToNow(new Date(comment.createdAt), { addSuffix: true })}
+                                            </div>                                   
+                                        </div>                                    
+                                                                       
                                     <div className="comment-message">{comment.content}</div>
                                 </div>
                             </div>

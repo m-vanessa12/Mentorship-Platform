@@ -34,7 +34,7 @@ const Users = () => {
     useEffect(() => {
         const fetchMentees = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/profiles');
+                const response = await axios.get('https://capstone-project-2-aaem.onrender.com/api/profiles');
                 setMentees(response.data);
                 console.log(response)
             } catch (error) {

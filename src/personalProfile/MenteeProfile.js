@@ -19,7 +19,7 @@ const MenteeProfile = () => {
             return;
         }
 
-        axios.get(`http://localhost:3000/api/mentee-profile`, {
+        axios.get(`https://capstone-project-2-aaem.onrender.com/api/mentee-profile`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },

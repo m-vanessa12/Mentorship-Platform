@@ -13,7 +13,7 @@ const MentorProfile = () => {
         const fetchMentorProfile = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.get('http://localhost:3000/api/mentor-profile', {
+                const response = await axios.get('https://capstone-project-2-aaem.onrender.com/api/mentor-profile', {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },

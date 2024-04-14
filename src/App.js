@@ -15,7 +15,6 @@ import Mentor from './platform users/MentorView';
 import Schedule from './platform users/schedule';
 import Settings from './Settings/settings';
 import AddComment from './community/addComment';
-//import CalendlySetting from './platform users/schedule';
 import Resources from './resources/resources';
 import MentorSessions from './Sessions/MentorBookedSessions';
 import MenteeMeetings from './Sessions/MenteesSessions';
@@ -59,7 +58,6 @@ function App() {
           <Route path="/mentors/:mentorId" element={<Mentor />} />
           <Route path="/mentorprofile" element={<Mentor />} />
           <Route path="/settings" element={<Settings />} />
-          {/* <Route path="/mentors/:mentorId/booksession" element={<CalendlySetting />} />   */}
           <Route path="/mentors/:mentorId/booksession" element={<Schedule/>} />  
 
           <Route path="/discussion-comments/:discussionId" element={<AddComment />} />
@@ -73,10 +71,6 @@ function App() {
           <Route path="/mentee-profile" element={<MenteeProfile/>} />
           <Route path="/mentor-profile" element={<MentorProfile/>} />
 
-         
-
-
-          {/* <Route path="/mentor-calendly" element={<CalendlySetting />} /> */}
 
 
           

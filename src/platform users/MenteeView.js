@@ -25,7 +25,7 @@ const Mentee = ({ }) => {
     useEffect(() => {
         const fetchMenteeData = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/mentees/${menteeId}`);
+                const response = await axios.get(`https://capstone-project-2-aaem.onrender.com/api/mentees/${menteeId}`);
                 setMenteeData(response.data);
                 setIsLoading(false);
             } catch (error) {

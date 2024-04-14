@@ -29,7 +29,7 @@ const fetchInterests = async () => {
         const userId = decodedToken.id; // or the correct key for the user's ID
         console.log('User ID from token:', userId);
 
-        const response = await axios.get(`http://localhost:3000/api/mentee-notifications/${userId}`, {
+        const response = await axios.get(`https://capstone-project-2-aaem.onrender.com/api/mentee-notifications/${userId}`, {
             headers: {
                 Authorization: `Bearer ${token}`
             }

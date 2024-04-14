@@ -49,7 +49,7 @@ const Schedule = () => {
     
             // Proceed with sending the booking request
             const token = localStorage.getItem('token');
-            const response = await fetch('http://localhost:3000/api/booking', {
+            const response = await fetch('https://capstone-project-2-aaem.onrender.com/api/booking', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

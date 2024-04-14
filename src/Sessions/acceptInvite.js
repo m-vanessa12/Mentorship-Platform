@@ -20,7 +20,7 @@ const AcceptInvite = ({ closeModal, sessionId, mentorId, onAcceptSuccess }) => {
         const token = localStorage.getItem('token');
 
         try {
-            await axios.post(`http://localhost:3000/api/${sessionId}/accept`, {}, {
+            await axios.post(`https://capstone-project-2-aaem.onrender.com/api/${sessionId}/accept`, {}, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

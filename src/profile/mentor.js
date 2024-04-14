@@ -86,7 +86,7 @@ const MentorProfileCreate = () => {
                     formDataToSend.append(key, value);
                 }
             });
-            await axios.post('http://localhost:3000/api/mentor', formDataToSend, {
+            await axios.post('https://capstone-project-2-aaem.onrender.com/api/mentor', formDataToSend, {
                 headers: {
                     'Authorization': `Bearer ${token}`,
                 }

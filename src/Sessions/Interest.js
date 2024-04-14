@@ -21,7 +21,7 @@ const NotifyInterests = ({ menteeId, closeModal }) => {
         }
 
         try {
-            const response = await axios.post(`http://localhost:3000/api/${menteeId}/notify-interest`, {
+            const response = await axios.post(`https://capstone-project-2-aaem.onrender.com/api/${menteeId}/notify-interest`, {
                 message
             }, {
                 headers: {

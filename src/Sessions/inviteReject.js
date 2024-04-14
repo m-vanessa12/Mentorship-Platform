@@ -21,7 +21,7 @@ const RejectInvite = ({ closeModal, sessionId  }) => {
         try {
             // Include the Authorization header in your request
             const response = await axios.post(
-                `http://localhost:3000/api/${sessionId}/reject`, 
+                `https://capstone-project-2-aaem.onrender.com/api/${sessionId}/reject`, 
                 { rejectionReason },
                 { headers: { Authorization: `Bearer ${token}` } }
             );

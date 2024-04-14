@@ -17,7 +17,7 @@ const AddCommentComponent = ({ discussionId, closeModel, userId }) => {
 
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.post('http://localhost:3000/api/comment-to-discussion', {
+            const response = await axios.post('https://capstone-project-2-aaem.onrender.com/api/comment-to-discussion', {
                 discussionId: discussionId, // Make sure this is named 'discussionId' as per backend
                 content: commentContent, // This is correct
             }, {

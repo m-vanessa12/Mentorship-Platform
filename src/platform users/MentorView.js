@@ -21,7 +21,7 @@ const Mentor = () => {
 
     useEffect(() => {
         if (mentorId) {
-            axios.get(`http://localhost:3000/api/mentors/${mentorId}`)
+            axios.get(`https://capstone-project-2-aaem.onrender.com/api/mentors/${mentorId}`)
                 .then(response => {
                     setMentorData(response.data);
                     setIsLoading(false);
@@ -34,10 +34,9 @@ const Mentor = () => {
     }, [mentorId]);
 
     const goToBookSession = () => {
-        if (mentorData && mentorData.calendly) {
-            navigate(`/mentors/${mentorId}/booksession`, { state: { calendlyLink: mentorData.calendly } });
-        }
-    };
+        navigate(`/mentors/${mentorId}/booksession`);
+      };
+      
 
     if (isLoading) {
         return <div>Loading...</div>;

@@ -17,7 +17,7 @@ const AdminSpace = () => {
     const fetchUsers = async () => {
         try {
           const token = localStorage.getItem('token');
-          const response = await axios.get('http://localhost:3000/api/platform-users', {
+          const response = await axios.get('https://capstone-project-2-aaem.onrender.com/api/platform-users', {
             headers: {
               Authorization: `Bearer ${token}`
             }

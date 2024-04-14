@@ -37,7 +37,7 @@ const Content = () => {
 
     try {
         const token = localStorage.getItem('token');
-        const response = await axios.post('http://localhost:3000/api/discussion', formData, {
+        const response = await axios.post('https://capstone-project-2-aaem.onrender.com/api/discussion', formData, {
           headers: {
             'Authorization': `Bearer ${token}`, // Include the token in the request headers
             'Content-Type': 'application/json',

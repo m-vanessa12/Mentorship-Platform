@@ -33,7 +33,7 @@ const MentorUsers = () => {
     useEffect(() => {
         const fetchMentors = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/api/all-mentors');
+                const response = await axios.get('https://capstone-project-2-aaem.onrender.com/api/all-mentors');
                 setMentors(response.data);
             } catch (error) {
                 console.error('Error fetching mentors:', error);

@@ -32,7 +32,7 @@ const SignUp = () => {
         e.preventDefault();
 
         try {
-          const response = await axios.post('http://localhost:3000/api/register', formData, {
+          const response = await axios.post('https://capstone-project-2-aaem.onrender.com/api/register', formData, {
             headers: {
               'Content-Type': 'application/json',
             },
@@ -41,6 +41,7 @@ const SignUp = () => {
           // Optionally, you can clear the form after successful submission
           setFormData({ firstName: '', lastName:'', email: '', password: ''});
           toast.success("Account created successfully!");
+          goToLogin();
         } catch (error) {
             // Checking for the specific error message from the backend
             if (error.response && error.response.data.message === 'Email already in use.') {

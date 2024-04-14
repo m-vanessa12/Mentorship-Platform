@@ -29,7 +29,7 @@ const MenteeMeetings = () => {
         const fetchMenteeMeetings = async () => {
             try {
                 // Replace the URL with your actual endpoint to fetch mentee's meetings
-                const response = await axios.get(`http://localhost:3000/api/mentee-sessions/${menteeId}`);
+                const response = await axios.get(`https://capstone-project-2-aaem.onrender.com/api/mentee-sessions/${menteeId}`);
                 if (response.data.success) {
                     setMeetings(response.data.sessions);
                     console.log("Fetched Meetings:", response.data.sessions);
@@ -89,7 +89,13 @@ const MenteeMeetings = () => {
                                   Meeting Link: <a href={meeting.meetingLink} target="_blank" rel="noopener noreferrer">{meeting.meetingLink}</a>
                                 </div>
                                 {/* Add any buttons or actions here */}
-                                <div className="session-about">{meeting.rejectionReason}</div>
+                                {meeting.status === 'Rejected' && (
+                                <div className="session-about">
+                                    {console.log('Rejected reason should display')}
+                                    <span className="rejection-reason">Rejected Reason:</span> 
+                                    {meeting.rejectionReason || 'No reason provided'}
+                                </div>
+                            )}
                             </div>
                             
                         </div>

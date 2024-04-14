@@ -398,3 +398,11 @@
     color: #fff;
     text-decoration: underline;
 }
+
+.rejected-reason{
+    background-color: rgb(62, 158, 242);
+    margin-top: 15px;
+    padding: 5px;
+    font-weight: bold;
+    color: red;
+}

@@ -46,7 +46,7 @@ const MentorSessions = () => {
 
     const fetchSessions = async (mentorId) => {
         try {
-            const response = await fetch(`http://localhost:3000/api/mentor-sessions/${mentorId}`);
+            const response = await fetch(`https://capstone-project-2-aaem.onrender.com/api/mentor-sessions/${mentorId}`);
             const data = await response.json();
     
             if (data.success) {
